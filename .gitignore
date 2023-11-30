@@ -1,23 +1,16 @@
-# IntelliJ IDEA specific files
+### Gradle ###
+.gradle/
+build/
+
+### IntelliJ IDEA ###
 .idea/
-*.iml
 *.iws
-
-# Compiled class files
-*.class
-
-# Build folders
-/bin/
+*.iml
+*.ipr
 /out/
-/build/
-/target/
 
-# Maven wrapper files
-.mvn/
-mvnw
-mvnw.cmd
-
-# Package Files
+### Java ###
+*.class
 *.jar
 *.war
 *.nar
@@ -26,9 +19,52 @@ mvnw.cmd
 *.tar.gz
 *.rar
 
-# virtual machine crash logs
-hs_err_pid*
+# Logging folders and files
+log/
+logs/
+*.log
 
-# OS-specific files
-.DS_Store # MacOS specific
-Thumbs.db # Windows specific
+# Miscellaneous
+*.swp
+*.bak
+*.class
+*.crx
+*.o
+*.xar
+*.swo
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Spring Boot specific artifact
+!**/src/main/**/application*.properties
+!**/src/main/**/application*.yml
+!**/src/test/**/application*.properties
+!**/src/test/**/application*.yml
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
