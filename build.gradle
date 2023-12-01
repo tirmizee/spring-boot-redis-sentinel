@@ -22,8 +22,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
-	implementation 'io.lettuce:lettuce-core'
+
+	implementation('org.springframework.boot:spring-boot-starter-data-redis') {
+		exclude group: 'io.lettuce', module: 'lettuce-core'
+	}
 	implementation 'redis.clients:jedis'
 	implementation 'org.apache.commons:commons-pool2:2.11.1'
 
